@@ -310,8 +310,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MNYYTRW888;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FDDHMJN7C8;
 				INFOPLIST_FILE = EnvironmentManagerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,6 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DP.iOS.EnvironmentManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "776-dev-wildcard-profile";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,8 +329,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MNYYTRW888;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FDDHMJN7C8;
 				INFOPLIST_FILE = EnvironmentManagerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,6 +338,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DP.iOS.EnvironmentManagerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "776-dev-wildcard-profile";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

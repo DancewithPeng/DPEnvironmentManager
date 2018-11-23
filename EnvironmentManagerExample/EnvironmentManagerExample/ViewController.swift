@@ -9,17 +9,15 @@
 import UIKit
 import EnvironmentManager
 
-extension EnvironmentAttribute {
-    case serverAPIVersion
-}
+//extension EnvironmentAttribute {
+//    case serverAPIVersion
+//}
+
 
 struct DebugEnvironment: Environment {
     
     func value(for attribute: EnvironmentAttribute) -> String {
-        switch attribute {
-        case .serverDomain:
-            return "www.baidu.com"
-        }
+        return ""
     }
     
     static func environment() -> DebugEnvironment {

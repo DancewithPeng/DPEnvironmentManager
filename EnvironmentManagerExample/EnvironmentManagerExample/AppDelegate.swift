@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EnvironmentManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 初始化
+        // setupWithEnv
+        
+        // 改变
+        // currentEnv = env
+        
+        // 使用
+        // host = currentEnv.host
+        // api = currentEnv.Version
+        // host = currentEnv
+        
         return true
     }
 

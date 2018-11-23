@@ -10,7 +10,7 @@ import Foundation
 
 
 public enum EnvironmentAttribute: String {
-    case serverDomain
+    case `defualt`
 }
 
 /// 环境

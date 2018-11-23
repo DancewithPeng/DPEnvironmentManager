@@ -77,8 +77,7 @@
 			children = (
 				6EE0D56521A5BBBD00CF08F8 /* EnvironmentManager.h */,
 				6EE0D56621A5BBBD00CF08F8 /* Info.plist */,
-				6EE0D59A21A5BC2D00CF08F8 /* EnvironmentManager.swift */,
-				6EE0D59C21A5BC4100CF08F8 /* Environment.swift */,
+				D03E3DC921A83136004F1CED /* Source */,
 			);
 			path = EnvironmentManager;
 			sourceTree = "<group>";
@@ -90,6 +89,15 @@
 				6EE0D57221A5BBBD00CF08F8 /* Info.plist */,
 			);
 			path = EnvironmentManagerTests;
+			sourceTree = "<group>";
+		};
+		D03E3DC921A83136004F1CED /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0D59A21A5BC2D00CF08F8 /* EnvironmentManager.swift */,
+				6EE0D59C21A5BC4100CF08F8 /* Environment.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
