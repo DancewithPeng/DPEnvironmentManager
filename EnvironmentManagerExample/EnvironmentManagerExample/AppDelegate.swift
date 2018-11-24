@@ -9,6 +9,30 @@
 import UIKit
 import EnvironmentManager
 
+struct Demo: Codable {
+    var name: String
+    var age: Int
+}
+
+protocol MyEnvironment: Environment {
+    var name: String { get }
+    var age: Int { get }
+}
+
+
+struct DebugEnvironment: MyEnvironment {
+    
+    //    func value(for attribute: EnvironmentAttribute) -> String {
+    //        return ""
+    //    }
+    var name: String = "asd"
+    var age: Int = 100
+    
+    static func environment() -> DebugEnvironment {
+        return DebugEnvironment()
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -28,6 +52,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // host = currentEnv.host
         // api = currentEnv.Version
         // host = currentEnv
+        
+//        let t = Test(name: "zhangsan")
+//        let tData = try! NSKeyedArchiver.archivedData(withRootObject: t, requiringSecureCoding: false)
+        
+        let d = Demo(name: "asd", age: 100)
+        let encoder = JSONEncoder()
+        let data = try! encoder.encode(d)
+        UserDefaults.standard.set(data, forKey: "Test")
+        UserDefaults.standard.synchronize()
+        
+        let decoder = JSONDecoder()
+        let newD = try! decoder.decode(Demo.self, from: UserDefaults.standard.value(forKey: "Test") as! Data)
+        print(newD)
+        
+        let a = DebugEnvironment()
+        EnvironmentManager.setup(withEnvironment: a)
         
         return true
     }

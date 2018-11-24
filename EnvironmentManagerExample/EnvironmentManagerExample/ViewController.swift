@@ -14,16 +14,6 @@ import EnvironmentManager
 //}
 
 
-struct DebugEnvironment: Environment {
-    
-    func value(for attribute: EnvironmentAttribute) -> String {
-        return ""
-    }
-    
-    static func environment() -> DebugEnvironment {
-        return DebugEnvironment()
-    }
-}
 
 class ViewController: UIViewController {
 
